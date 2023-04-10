@@ -59,20 +59,20 @@ button {
 }
 
 /* ==========COMPONENTS========== */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+/* .section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+} */
 
 .container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.section-title {
+/* .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -81,22 +81,22 @@ button {
   text-transform: capitalize;
   margin-bottom: 72px;
   color: var(--primary-text-color);
-}
+} */
 
-.subtitle {
+/* .subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   color: var(--primary-text-color);
-}
+} */
 
-.text {
+/* .text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
-}
+} */
 
 .hidden {
   position: absolute;
@@ -113,7 +113,7 @@ button {
 /* ==========/COMPONENTS========== */
 
 /* ==========HEADER========== */
-.page-header {
+/* .page-header {
   border-bottom: 1px solid var(--footer-text-color);
 }
 
@@ -215,15 +215,15 @@ button {
 .contacts-link:focus,
 .contacts-link:active {
   color: var(--accent-color);
-}
+} */
 /* ==========/HEADER========== */
 
 /* ==========MAIN PAGE========== */
 /* ==========Hero========== */
 .hero-section {
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 428px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -232,19 +232,20 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-background-img.jpg);
+    url(../images/bg-img/bg-mob.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   color: var(--hero-text-color);
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 320px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -277,7 +278,7 @@ button {
 /* ==========/Hero========== */
 
 /* ==========Our advantages========== */
-.advantages-list {
+/* .advantages-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -296,11 +297,11 @@ button {
   margin-bottom: 8px;
   background-color: var(--footer-logo-color);
   border-radius: 4px;
-}
+} */
 /* ==========/Our advantages========== */
 
 /* ==========What are we doing========== */
-.examples-of-work {
+/* .examples-of-work {
   padding-bottom: 120px;
 }
 
@@ -313,11 +314,11 @@ button {
 
 .examples-of-work-item {
   flex-basis: calc((100% - 48px) / 3);
-}
+} */
 /* ==========/What are we doing========== */
 
 /* ==========Our Team========== */
-.team-section {
+/* .team-section {
   background-color: var(--footer-logo-color);
 }
 
@@ -373,11 +374,11 @@ button {
 
 .team-section-content .text {
   margin-bottom: 8px;
-}
+} */
 /* ==========/Our Team========== */
 
 /* ==========Customers========== */
-.customers-list {
+/* .customers-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,12 +409,12 @@ button {
 .customers-list-link:hover .customers-list-icon,
 .customers-list-link:focus .customers-list-icon {
   fill: var(--accent-color);
-}
+} */
 /* ==========/Customers========== */
 /* ==========/MAIN PAGE========== */
 
 /* ==========FOOTER========== */
-.page-footer {
+/* .page-footer {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--primary-text-color);
@@ -481,10 +482,10 @@ button {
 .footer-social-networks-link:hover,
 .footer-social-networks-link:focus {
   background-color: var(--success-messages-color);
-}
+} */
 
 /* Footer form */
-.footer-form-wrapper {
+/* .footer-form-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -556,11 +557,11 @@ button {
 .footer-submit-icon {
   fill: var(--primary-bkg-color);
   margin-left: 16px;
-}
+} */
 /* ==========/FOOTER========== */
 
 /* ==========PORTFOLIO PAGE========== */
-.portfolio-section {
+/* .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -659,11 +660,11 @@ button {
   padding-bottom: 32px;
   padding-right: 16px;
   padding-left: 16px;
-}
+} */
 /* ==========/PORTFOLIO PAGE========== */
 
 /* ==========MODAL WINDOW========== */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -739,12 +740,12 @@ button {
 .modal-close-btn:hover .modal-close-btn-icon,
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--hero-text-color);
-}
+} */
 
 /* ==========/MODAL WINDOW========== */
 
 /* ==========MODAL FORM========== */
-.modal-form {
+/* .modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -901,5 +902,5 @@ button {
 .modal-form-submit:focus,
 .modal-form-submit:active {
   background-color: var(--accent-color);
-}
+} */
 /* ==========/MODAL FORM========== */
