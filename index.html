@@ -21,16 +21,16 @@
 
   <body>
     <!-- HEADER -->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="page-header-container container">
-        <nav class="page-nav"> -->
-    <!-- Logotype -->
-    <!-- <a href="./index.html" class="logo-text link">
-            <span class="logo-text-accent">Web</span>Studio
-          </a> -->
+        <!-- Logotype -->
+        <a href="./index.html" class="logo-text link">
+          <span class="logo-text-accent">Web</span>Studio
+        </a>
 
-    <!-- Nav -->
-    <!-- <ul class="menu list">
+        <!-- Nav -->
+        <nav class="page-nav">
+          <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link menu-link-current" href="./index.html"
                 >Studio</a
@@ -43,10 +43,10 @@
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
 
-    <!-- Contacts -->
-    <!-- <address class="contacts">
+        <!-- Contacts -->
+        <address class="contacts">
           <ul class="site-contacts list">
             <li class="site-contacts-item">
               <a class="contacts-link link" href="mailto:info@devstudio.com"
@@ -60,8 +60,118 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn" data-menu-open>
+          <svg
+            aria-label="Open menu button"
+            class="open-menu-btn-icon"
+            width="32"
+            height="22"
+          >
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg
+              aria-label="Mobile menu close icon"
+              class="mobile-menu-close-btn-icon"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a
+                class="mobile-menu-link mobile-menu-link-current link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts-tel">
+              <a class="mobile-contacts-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contacts-mail">
+              <a
+                class="mobile-contacts-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-social-networks-list list">
+            <li class="mobile-menu-social-networks-item">
+              <a class="mobile-menu-social-networks-link link" href="">
+                <svg
+                  aria-label="Instagram"
+                  class="mobile-menu-social-networks-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-networks-item">
+              <a class="mobile-menu-social-networks-link link" href="">
+                <svg
+                  aria-label="Twitter"
+                  class="mobile-menu-social-networks-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-networks-item">
+              <a class="mobile-menu-social-networks-link link" href="">
+                <svg
+                  aria-label="Facebook"
+                  class="mobile-menu-social-networks-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-networks-item">
+              <a class="mobile-menu-social-networks-link link" href="">
+                <svg
+                  aria-label="LinkedIn"
+                  class="mobile-menu-social-networks-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- MAIN -->
     <main>
@@ -76,7 +186,7 @@
       </section>
 
       <!-- Our advantages -->
-      <!-- <section class="advantages-section section">
+      <section class="advantages-section section">
         <div class="advantages-section-container container">
           <h2 class="section-title hidden">Our advantages</h2>
           <ul class="advantages-list list">
@@ -150,16 +260,20 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- What are we doing -->
-      <!-- <section class="examples-of-work">
+      <section class="examples-of-work">
         <div class="examples-of-work-container container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="examples-of-work-list list">
             <li class="examples-of-work-item">
               <img
-                src="./images/our-projects/img-1.jpg"
+                srcset="
+                  ./images/our-projects/example-of-work-1.jpg    1x,
+                  ./images/our-projects/example-of-work-1@2x.jpg 2x
+                "
+                src="./images/our-projects/example-of-work-1.jpg"
                 alt="Desktop applications"
                 width="360"
                 height="300"
@@ -167,7 +281,11 @@
             </li>
             <li class="examples-of-work-item">
               <img
-                src="./images/our-projects/img-2.jpg"
+                srcset="
+                  ./images/our-projects/example-of-work-2.jpg    1x,
+                  ./images/our-projects/example-of-work-2@2x.jpg 2x
+                "
+                src="./images/our-projects/example-of-work-2.jpg"
                 alt="Design solutions"
                 width="360"
                 height="300"
@@ -175,7 +293,11 @@
             </li>
             <li class="examples-of-work-item">
               <img
-                src="./images/our-projects/img-3.jpg"
+                srcset="
+                  ./images/our-projects/example-of-work-3.jpg    1x,
+                  ./images/our-projects/example-of-work-3@2x.jpg 2x
+                "
+                src="./images/our-projects/example-of-work-3.jpg"
                 alt="Mobile applications"
                 width="360"
                 height="300"
@@ -183,15 +305,19 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Our Team -->
-      <!-- <section class="team-section section">
+      <section class="team-section section">
         <div class="team-section-container container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team/team-card-1.jpg    1x,
+                  ./images/our-team/team-card-1@2x.jpg 2x
+                "
                 src="./images/our-team/team-card-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -254,6 +380,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team/team-card-2.jpg    1x,
+                  ./images/our-team/team-card-2@2x.jpg 2x
+                "
                 src="./images/our-team/team-card-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -316,6 +446,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team/team-card-3.jpg    1x,
+                  ./images/our-team/team-card-3@2x.jpg 2x
+                "
                 src="./images/our-team/team-card-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -378,6 +512,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/our-team/team-card-4.jpg    1x,
+                  ./images/our-team/team-card-4@2x.jpg 2x
+                "
                 src="./images/our-team/team-card-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -440,10 +578,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Customers -->
-      <!-- <section class="customers-section section">
+      <section class="customers-section section">
         <div class="customers-section-container container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
@@ -533,11 +671,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer-container container">
         <div class="logo-text-footer-wrapper">
           <a href="./index.html" class="logo-text logo-text-footer link">
@@ -632,10 +770,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL WINDOW -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg
@@ -661,6 +799,7 @@
                 name="user-name"
                 class="modal-form-input"
                 required
+                autofocus
                 pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
               />
               <svg
@@ -741,6 +880,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
