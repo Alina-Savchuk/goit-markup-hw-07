@@ -28,10 +28,6 @@
     font-size: 36px;
   }
 
-  .footer-form-input {
-    width: 398px;
-  }
-
   .modal {
     width: 392px;
   }
@@ -246,12 +242,24 @@
   .footer-form-wrapper {
     position: relative;
     display: flex;
-    align-items: start;
-    gap: 24px;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+    row-gap: 0;
+    column-gap: 24px;
+  }
+
+  .footer-form-field {
+    width: 264px;
   }
 
   .footer-form-input {
-    width: 264px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-form-submit {
+    margin: 0;
   }
 
   .footer-form-submit:hover,
@@ -355,6 +363,9 @@
 
   .hero-section {
     max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -430,6 +441,11 @@
 
   .customers-list {
     gap: 20px;
+  }
+
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .page-footer-container {
